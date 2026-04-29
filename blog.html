@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia sẻ | Võ Minh Chữ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; padding-top: 80px; background-color: #fcfcfc; }
+        .blog-post { background: #fff; border-radius: 12px; padding: 25px; margin-bottom: 25px; border: 1px solid #eee; }
+        .contact-form { background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+    <!-- Navbar (Giữ nguyên) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">MINH CHỮ.</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Trải nghiệm</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Chia sẻ & Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row g-5">
+            <!-- Góc chia sẻ -->
+            <div class="col-lg-7">
+                <h3 class="fw-bold mb-4">Góc chia sẻ</h3>
+                <div class="blog-post">
+                    <span class="badge bg-soft-primary text-primary mb-2" style="background:#e7f0ff">Học tập</span>
+                    <h4 class="fw-bold">Cách tôi học Bootstrap trong 1 tuần</h4>
+                    <p class="text-muted">Chia sẻ về những nguồn tài liệu và phương pháp thực hành hiệu quả nhất...</p>
+                    <small class="text-muted">Ngày 20/10/2023 • 5 phút đọc</small>
+                </div>
+                <div class="blog-post">
+                    <span class="badge bg-soft-success text-success mb-2" style="background:#e6f9ed">Đời sống</span>
+                    <h4 class="fw-bold">Sinh viên TVU và những thử thách</h4>
+                    <p class="text-muted">Những trải nghiệm thú vị khi theo học ngành CNTT tại quê hương Trà Vinh.</p>
+                    <small class="text-muted">Ngày 15/10/2023 • 3 phút đọc</small>
+                </div>
+            </div>
+
+            <!-- Form liên hệ -->
+            <div class="col-lg-5">
+                <div class="contact-form">
+                    <h3 class="fw-bold mb-3">Kết nối</h3>
+                    <p class="text-muted small">Hãy để lại tin nhắn, tôi sẽ phản hồi sớm nhất có thể.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Họ tên</label>
+                            <input type="text" class="form-control" placeholder="Nguyễn Văn A">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Email</label>
+                            <input type="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Tin nhắn</label>
+                            <textarea class="form-control" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Gửi lời nhắn</button>
+                    </form>
+                    <div class="mt-4 text-center">
+                        <p class="small text-muted mb-1">Hoặc qua email:</p>
+                        <a href="mailto:vochu9573@gmail.com" class="text-primary fw-bold">vochu9573@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
