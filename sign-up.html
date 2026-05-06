@@ -4,10 +4,10 @@
   <title>Đăng ký tài khoản</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- Cập nhật lên Bootstrap 5 cho đồng bộ với Portfolio -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <style>
-    /* Căn giữa toàn bộ trang */
     body {
       background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
       display: flex;
@@ -18,7 +18,6 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    /* Khung đăng ký */
     .register-container {
       background-color: #ffffff;
       padding: 40px;
@@ -29,7 +28,6 @@
       margin: 20px;
     }
 
-    /* Tiêu đề */
     h2 {
       text-align: center;
       font-weight: bold;
@@ -46,8 +44,7 @@
       font-size: 14px;
     }
 
-    /* Tùy chỉnh các ô nhập liệu */
-    .form-group label {
+    .form-label {
       font-weight: 600;
       color: #555;
     }
@@ -64,7 +61,6 @@
       border-color: #007bff;
     }
 
-    /* Nút đăng ký */
     .btn-register {
       width: 100%;
       height: 48px;
@@ -83,7 +79,6 @@
       transform: translateY(-1px);
     }
 
-    /* Link chuyển sang đăng nhập */
     .login-link {
       text-align: center;
       margin-top: 20px;
@@ -95,57 +90,45 @@
       text-decoration: none;
       font-weight: 600;
     }
-
-    .login-link a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
 
-<div class="register-container">
+<div class="register-container shadow">
   <h2>Tạo tài khoản</h2>
-  <p class="subtitle">Nhanh chóng và dễ dàng.</p>
+  <p class="subtitle">Nhanh chóng và dễ dàng cùng Võ Minh Chữ.</p>
   
-  <form action="/register_process.php" method="POST">
-    <!-- Họ và tên -->
-    <div class="form-group">
-      <label for="fullname">Họ và tên</label>
-      <input type="text" class="form-control" id="fullname" placeholder="VD: Nguyễn Văn A" name="fullname" required>
+  <form action="#" method="POST">
+    <div class="mb-3">
+      <label for="fullname" class="form-label">Họ và tên</label>
+      <input type="text" class="form-control" id="fullname" placeholder="VD: Nguyễn Văn A" required>
     </div>
 
-    <!-- Email -->
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="email@viethan.com" name="email" required>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
     </div>
 
-    <!-- Mật khẩu -->
-    <div class="form-group">
-      <label for="pwd">Mật khẩu</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pswd" required>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Mật khẩu</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" required>
     </div>
 
-    <!-- Xác nhận mật khẩu -->
-    <div class="form-group">
-      <label for="re-pwd">Xác nhận mật khẩu</label>
-      <input type="password" class="form-control" id="re-pwd" placeholder="Nhập lại mật khẩu" name="re-pswd" required>
+    <div class="mb-3">
+      <label for="re-pwd" class="form-label">Xác nhận mật khẩu</label>
+      <input type="password" class="form-control" id="re-pwd" placeholder="Nhập lại mật khẩu" required>
     </div>
 
-    <!-- Điều khoản -->
-    <div class="form-group form-check">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="terms" required> Tôi đồng ý với các điều khoản dịch vụ
-      </label>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="terms" required>
+      <label class="form-check-label" for="terms">Tôi đồng ý với điều khoản</label>
     </div>
 
-    <!-- Nút Submit -->
     <button type="submit" class="btn btn-register shadow-sm">Đăng ký ngay</button>
   </form>
 
-  <!-- Chuyển hướng -->
   <div class="login-link">
-    Bạn đã có tài khoản? <a href="#">Đăng nhập tại đây</a>
+    Bạn đã có tài khoản? <a href="signin.html">Đăng nhập tại đây</a>
   </div>
 </div>
 
