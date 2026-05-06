@@ -1,142 +1,145 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Cá Nhân | Võ Minh Chữ</title>
-    <!-- Link Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome cho Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body { scroll-behavior: smooth; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        /* Sửa lỗi khoảng trắng ở linear-gradient */
-        .hero-section { 
-            height: 100vh; 
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1920&q=80'); 
-            background-size: cover; 
-            background-position: center; 
-        }
-        section { padding: 80px 0; }
-        .navbar-brand { font-weight: bold; }
-        .avatar-img {
-            border-radius: 50%; 
-            height: 200px; 
-            width: 200px; 
-            object-fit: cover; 
-            border: 5px solid #fff; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
-            display: block; 
-            margin: 0 auto;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân | Võ Minh Chữ</title>
+    <!-- Link Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome cho Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <style>
+        body { scroll-behavior: smooth; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-section { height: 100vh; background: linear-gradient (rgba(111, 94, 143, 0.6), rgba(131, 89, 89, 0.6)), url('https://via.placeholder.com/1920x1080'); background-size: cover; background-position: center; }
+        section { padding: 80px 0; }
+        .navbar-brand { font-weight: bold; }
+    </style>
 </head>
 <body>
 
-    <!-- Menu Điều Hướng -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-        <div class="container">
-            <a class="navbar-brand" href="#">MY PORTFOLIO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="sign-up.html">Đăng ký</a></li>
-                    <li class="nav-item"><a class="nav-link" href="signin.html">Đăng nhập</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Menu Điều Hướng -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MY PORFILE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="sign-up.html">Đăng ký</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signin.html">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Trang Chủ / Hero Section -->
-    <header class="hero-section d-flex align-items-center text-white text-center">
-        <div class="container">
-            <h1 class="display-2 fw-bold">Võ Minh Chữ</h1>
-            <p class="lead fs-3">Lập trình viên / Sinh viên CNTT</p>
-            <a href="#intro" class="btn btn-primary btn-lg mt-3 px-5 shadow">Tìm hiểu thêm</a>
-        </div>
-    </header>
+    <!-- Trang Chủ / Hero Section -->
+    <header class="hero-section d-flex align-items-center text-white text-center">
+        <div class="container">
+            <h1 class="display-2 fw-bold">Võ Minh Chữ</h1>
+            <p class="lead">Lập trình viên / Sinh viên CNTT </p>
+            <a href="#intro" class="btn btn-outline-light btn-lg mt-3">Tìm hiểu thêm</a>
+        </div>
+    </header>
 
-    <!-- Giới Thiệu -->
-    <section id="intro" class="bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 text-center mb-4 mb-md-0">
-                    <!-- Đảm bảo file 2.jpg tồn tại trong cùng thư mục -->
-                    <img class="avatar-img" src="2.jpg" alt="Avatar">
-                </div>
-                <div class="col-md-7">
-                    <h2 class="mb-4 text-primary">Về bản thân mình</h2>
-                    <p class="lead">Mình là Võ Minh Chữ, hiện đang là sinh viên năm nhất ngành CNTT tại Đại học Trà Vinh (ĐHTV).</p>
-                    <p>Dù ban đầu đây không phải là ngành mình ưu tiên lựa chọn, nhưng mình luôn tâm niệm rằng: <i>"Sáng tạo là sự kết nối các điểm lại với nhau"</i>. Mình đang nỗ lực từng ngày để chinh phục những dòng code và hoàn thành tốt chương trình học.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Giới Thiệu -->
+    <section id="intro" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <img style="border-radius: 50%; height: 200px; width: 200px; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; margin: 0 auto;" src="2.jpg" alt="Avatar">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="mb-4">Về bản thân mình</h2>
+                    <p>Mình là Võ Minh Chữ, mình đang học tại ĐHTV, là sinh viên năm nhất ngành CNTT. Dù đây không phải là ngành mình lựa chọn nhưng mình sẽ cố gắng hết sức để hoàn thành tốt</p>
+                    <p>Mình tin rằng: "Sáng tạo là sự kết nối các điểm lại với nhau".</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Trải Nghiệm & Kế Hoạch -->
-    <section id="experience">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Khám Phá Thêm</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-0 shadow-sm p-3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary"><i class="fas fa-bullseye me-2"></i>Kế hoạch tương lai</h5>
-                            <ul class="list-unstyled mt-3">
-                                <li class="mb-2"><a href="experience.html" class="text-decoration-none text-dark">🎯 Kế hoạch học tập chuyên sâu</a></li>
-                                <li class="mb-2"><a href="hk2nam1.html" class="text-decoration-none text-dark">🎯 Mục tiêu Học kỳ 2 Năm 1</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 border-0 shadow-sm p-3">
-                        <div class="card-body text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title text-primary mb-4">Chia sẻ và liên hệ</h5>
-                            <a href="blog.html" class="btn btn-outline-primary shadow-sm">Xem Blog Cá Nhân</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Trải Nghiệm -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="text-center mb-5">Tìm hiểu thêm về mình</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">kế hoạch tương lai</h5>
+                         <p class="text-muted"><a href="experience.html">kế hoạch A</a></p>
+                        <p class="text-muted"><a href="hk2nam1.html">kế hoạch B</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Chia sẻ và liên hệ</h5>
+                            <p class="text-muted"><a href="blog.html"> chia sẻ và liên hệ</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Liên Hệ -->
-    <section id="contact" class="bg-dark text-white">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Kết nối với mình</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Họ và tên">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email của bạn">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Lời nhắn..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2">Gửi tin nhắn</button>
-                    </form>
-                    <div class="mt-5 text-center">
-                        <a href="#" class="text-white mx-3"><i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="#" class="text-white mx-3"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="#" class="text-white mx-3"><i class="fab fa-linkedin fa-2x"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Chia Sẻ (Blog/Sở thích) -->
+    <!--<section id="share" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Góc Chia Sẻ</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blog">
+                        <div class="card-body">
+                            <h6>Cách tự học lập trình hiệu quả</h6>
+                            <a href="#" class="btn btn-sm btn-link p-0 text-decoration-none">Đọc thêm →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thêm các card chia sẻ khác tương tự -->
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="py-4 text-center bg-black text-muted">
-        <p class="mb-0">© 2026 Design with ❤️ by Võ Minh Chữ</p>
-    </footer>
+    <!-- Thành Tích Cá Nhân -->
+   
 
-    <!-- Bootstrap Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Liên Hệ -->
+    <section id="contact" class="bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Kết nối với mình</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Họ và tên">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email của bạn">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Lời nhắn..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Gửi tin nhắn</button>
+                    </form>
+                    <div class="mt-4 text-center">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center bg-dark border-top border-secondary text-muted">
+        <p>© 2026 Design by Võ Minh Chữ</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html>. lỗi ở chỗ nào
