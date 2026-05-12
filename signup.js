@@ -1,6 +1,6 @@
 // Đợi DOM tải xong để đảm bảo các phần tử HTML đã sẵn sàng
 document.addEventListener('DOMContentLoaded', function () {
-    const registerForm = document.querySelector('form');
+    const registerForm = document.querySelector('registerForm');
 
     if (registerForm) {
         registerForm.addEventListener('submit', function (event) {
