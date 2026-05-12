@@ -1,31 +1,33 @@
-// Đợi DOM tải xong để đảm bảo các phần tử HTML đã sẵn sàng
+// Đảm bảo code chỉ chạy khi trang đã tải xong
 document.addEventListener('DOMContentLoaded', function () {
-    const registerForm = document.querySelector('registerForm');
+    const registerForm = document.getElementById('registerForm');
 
     if (registerForm) {
         registerForm.addEventListener('submit', function (event) {
-            // Ngăn chặn load lại trang
+            // 1. Chặn trình duyệt gửi form đi (Tránh lỗi 405 trên GitHub)
             event.preventDefault();
 
-            // Lấy dữ liệu từ các ô input
+            // 2. Lấy dữ liệu từ các ô input
             const fullName = document.getElementById('fullname').value;
             const password = document.getElementById('pwd').value;
             const rePassword = document.getElementById('re-pwd').value;
 
-            // Kiểm tra mật khẩu khớp nhau
+            // 3. Kiểm tra mật khẩu khớp nhau
             if (password !== rePassword) {
                 alert("Mật khẩu xác nhận không khớp. Vui lòng kiểm tra lại!");
                 return;
             }
 
-            // Tạo chuỗi dấu sao để che mật khẩu
+            // 4. Tạo hiệu ứng che mật khẩu bằng dấu *
             const maskedPassword = "*".repeat(password.length);
 
-            // Hiển thị thông báo
+            // 5. Hiển thị thông báo
             alert(`Cảm ơn bạn đã đăng ký tài khoản!\nTên tài khoản của bạn là: ${fullName}\nMật khẩu: ${maskedPassword}`);
             
-            // Tùy chọn: Gửi form đi sau khi hiện thông báo (nếu có server thật)
-            // this.submit();
+            // 6. Xóa dữ liệu trên form sau khi đăng ký xong (tùy chọn)
+            registerForm.reset();
         });
+    } else {
+        console.error("Không tìm thấy form với id 'registerForm'");
     }
 });
